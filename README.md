@@ -29,11 +29,13 @@ widget that displays the selected option and sets a global variable, you can
 use the `DropdownWithOutput` class:
 
     
-```python
-    pip install ipywidgets
-    from ipywidgets_gallery import DropdownWithOutput
+![image](https://user-images.githubusercontent.com/128432/230676626-ed9ea717-31aa-4135-ac11-29d0d7ace85a.png)
     
-    my_dropdown = DropdownWithOutput('Select an option:', ['Option 1', 'Option 2', 'Option 3'], 'You selected {}!', 'my_global_var')
+```python
+    from ipywidgets_gallery import DropdownWithOutput
+    options = ['option 1', 'option 2', 'option 3']
+    dropdown = ipywidgets_gallery.DropdownWithOutput(options, default='option 1')
+    dropdown.value      # 'option 1'
 ```
 
 This will display a dropdown widget with the specified label and options, and
@@ -43,6 +45,8 @@ selected option) when an option is selected. The global variable named
 
 IPyWidgets Gallery provides a variety of other classes for creating widgets
 with different types of output and global variable assignments. 
+
+
 
 ## Available widgets
 
