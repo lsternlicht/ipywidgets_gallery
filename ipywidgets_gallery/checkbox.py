@@ -3,6 +3,8 @@ from IPython.display import display
 
 
 class CheckboxWithOutput:
+    """CheckboxWithOutput: A widget that displays a checkbox option."""
+
     def __init__(self, label, message, default=False):
         self.checkbox = widgets.Checkbox(description=label, value=default)
         self.output = widgets.Output()

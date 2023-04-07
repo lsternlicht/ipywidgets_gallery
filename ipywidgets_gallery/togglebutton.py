@@ -3,6 +3,8 @@ from IPython.display import display
 
 
 class ToggleButtonWithOutput:
+    # ToggleButtonWithOutput: A widget that displays a toggle button and an output widget that displays a message when the button is toggled.
+
     def __init__(self, label, message="Toggle Button value: {}"):
         self.button = widgets.ToggleButton(description=label)
         self.output = widgets.Output()

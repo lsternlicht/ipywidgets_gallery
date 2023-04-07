@@ -3,6 +3,8 @@ from IPython.display import display
 
 
 class DropdownWithOutput:
+    """DropdownWithOutput: A widget that displays a dropdown menu and an output widget that displays the selected option."""
+
     def __init__(self, options, default=None):
         self.options = options
         self.value = default or options[0]
