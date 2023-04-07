@@ -3,21 +3,19 @@ from IPython.display import display
 
 
 class CheckboxWithOutput:
-    def __init__(self, label, message, global_var_name):
-        self.checkbox = widgets.Checkbox(description=label)
+    def __init__(self, label, message, default=False):
+        self.checkbox = widgets.Checkbox(description=label, value=default)
         self.output = widgets.Output()
-        self.global_var_name = global_var_name
+        self.value = default
 
         def update_output(change):
             with self.output:
                 self.output.clear_output()
-                if change['new']:
+                if change["new"]:
                     print(message)
-                    global_vars = globals()
-                    global_vars[self.global_var_name] = True
+                    self.value = change["new"]
                 else:
-                    global_vars = globals()
-                    global_vars[self.global_var_name] = False
+                    self.value = change["new"]
 
-        self.checkbox.observe(update_output, names='value')
+        self.checkbox.observe(update_output, names="value")
         display(widgets.VBox([self.checkbox, self.output]))
