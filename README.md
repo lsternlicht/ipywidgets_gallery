@@ -29,7 +29,7 @@ widget that displays the selected option and sets a `.value attribute`, you can
 use the `DropdownWithOutput` class:
 
     
-![image](https://user-images.githubusercontent.com/128432/230676626-ed9ea717-31aa-4135-ac11-29d0d7ace85a.png)
+![image](https://user-images.githubusercontent.com/128432/230676993-ca25b7f1-af87-4b84-9b01-b4f66a55a264.png)
     
 ```python
     from ipywidgets_gallery import DropdownWithOutput
