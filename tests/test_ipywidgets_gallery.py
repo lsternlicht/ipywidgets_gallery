@@ -5,10 +5,14 @@ from ipywidgets_gallery import (
     ColorPickerWithOutput,
     DatePickerWithOutput,
     DropdownWithOutput,
+    FilePickerWithOutput,
+    IntSliderWithOutput,
     RadioButtonsWithOutput,
+    RangeSliderWithOutput,
     SelectMultipleWithOutput,
     TextAreaWithOutput,
     ToggleButtonWithOutput,
+    ToggleButtonGroupWithOutput,
 )
 
 import ipywidgets as widgets

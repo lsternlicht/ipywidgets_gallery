@@ -5,7 +5,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="ipywidgets_gallery",
-    version="0.15",
+    version="0.16",
     description="A library of interactive widgets for Jupyter notebooks",
     url="https://github.com/lsternlicht/ipywidgets_gallery",
     author="Leo Sternlicht",

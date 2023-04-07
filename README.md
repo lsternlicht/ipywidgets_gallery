@@ -44,6 +44,20 @@ selected option) when an option is selected. The global variable named
 IPyWidgets Gallery provides a variety of other classes for creating widgets
 with different types of output and global variable assignments. 
 
+## Available widgets
+
+* `CheckboxWithOutput`
+* `ColorPickerWithOutput`
+* `DatePickerWithOutput`
+* `DropdownWithOutput`
+* `FilePickerWithOutput`
+* `IntSliderWithOutput`
+* `RadioButtonsWithOutput`
+* `RangeSliderWithOutput`
+* `SelectMultipleWithOutput`
+* `TextAreaWithOutput`
+* `ToggleButtonWithOutput`
+* `ToggleButtonGroupWithOutput`
 
 
 ## License
