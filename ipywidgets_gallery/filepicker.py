@@ -14,8 +14,9 @@ class FilePickerWithOutput:
             with self.output:
                 self.output.clear_output()
                 if len(change["new"]) > 0:
-                    self.value = list(change["new"].keys())[0]
-                    print(message.format(self.value))
+                    print(change["new"])
+                    self.value = change["new"]
+                    print(message.format(str(self.value)))
 
         self.file_picker.observe(update_output, names="value")
         display(widgets.VBox([self.file_picker, self.output]))
