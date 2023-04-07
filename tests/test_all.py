@@ -1,6 +1,6 @@
 # test_ipywidgets_gallery.py
 
-from ipywidget_gallery import (
+from ipywidgets_gallery import (
     CheckboxWithOutput,
     ColorPickerWithOutput,
     DatePickerWithOutput,
